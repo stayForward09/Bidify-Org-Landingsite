@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Slider from "react-slick";
 // import ReactPlayer from "react-player";
 // import { useHistory } from "react-router";
@@ -48,12 +48,6 @@ const landingPage = () => {
   };
 
   const RenderCarousel = () => {
-    const [isPlaying, setIsPlaying] = useState(false)
-    const [isStart, setIsStart] = useState(false)
-    const handleStart = () => {
-      setIsPlaying(true);
-      setIsStart(true);
-    }
     return (
       <div className="carousel">
         <div>
@@ -94,22 +88,11 @@ const landingPage = () => {
             <div className="container">
               <Slider {...settings}>
                 <div className="block-content">
-                  {
-                    !isStart ?
-                    <div className="explain-thumb">
-                      <div onClick={handleStart}></div>
-                    </div> :
-                    <ReactPlayer
-                      url="https://youtu.be/nfGdBAH3P48"
-                      className="player-wrapper"
-                      controls
-                      width={"100%"}
-                      playing={isPlaying}
-                      onEnded={() => {setIsStart(false)}}
-                      onPause={() => {setIsPlaying(false)}}
-                      onPlay={() => {setIsPlaying(true)}}
-                    />
-                  }                  
+                  <ReactPlayer
+                    url="https://youtu.be/nfGdBAH3P48"
+                    className="player-wrapper"
+                    width={"100%"}
+                  />
                 </div>
                 <div className="block-content">
                   <img src={heroIllustration} alt="heroIllustration" />
