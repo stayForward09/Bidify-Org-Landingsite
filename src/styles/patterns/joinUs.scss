@@ -1,0 +1,26 @@
+.joinUs {
+  background: url("../../assets/images/backgroundGradient.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  box-shadow: 0px 25px 30px -15px #6c737d;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding: 50px;
+  .inputTag {
+    width: 50%;
+  }
+  height: fit-content;
+  @media (max-width: 768px) {
+    .inputTag {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    grid-template-columns: repeat(1, 1fr);
+    > img {
+      display: none;
+    }
+  }
+}

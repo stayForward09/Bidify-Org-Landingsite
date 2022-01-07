@@ -1,0 +1,367 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gentona-book";
+  letter-spacing: 0.03em;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  src: url(./assets/fonts/Gentona-Book.ttf);
+  font-family: "gentona-book";
+}
+
+@font-face {
+  src: url(./assets/fonts/Gentona-Light.ttf);
+  font-family: "gentona-light";
+}
+
+@font-face {
+  src: url(./assets/fonts/Gentona-Medium.ttf);
+  font-family: "gentona-medium";
+}
+
+@font-face {
+  src: url(./assets/fonts/Gentona-SemiBold.ttf);
+  font-family: "gentona-semiBold";
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+Link {
+  text-decoration: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.text_primary_14_W500 {
+  font-family: "gentona-book";
+  font-size: 0.875em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: #4c4b4b;
+}
+
+.text_primary_16_W500 {
+  font-family: "gentona-medium";
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #4c4b4b;
+}
+
+.text_primary_20_W500 {
+  font-family: "gentona-medium";
+  font-size: 1.25em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #4c4b4b;
+}
+
+.text_primary_24_W600 {
+  font-family: "gentona-semiBold";
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  color: #4c4b4b;
+}
+
+.text_secondary_12_W400 {
+  font-family: "gentona-book";
+  font-size: 0.75em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: #6c737d;
+}
+
+.text_secondary_12_W400_v2 {
+  font-family: "gentona-book";
+  font-size: 0.75em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  color: #6c737d;
+}
+
+.text_secondary_14_W500 {
+  font-family: "gentona-book";
+  font-size: 0.875em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: #6c737d;
+}
+
+.text_secondary_14_W400 {
+  font-family: "gentona-book";
+  font-size: 0.875em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: #6c737d;
+}
+
+.text_secondary_14_W400_v2 {
+  font-family: "gentona-book";
+  font-size: 0.875em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #6c737d;
+}
+
+.text_secondary_14_W400_v3 {
+  font-family: "gentona-book";
+  font-size: 0.875em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.04em;
+  color: #6c737d;
+}
+
+.text_white_32_W600 {
+  font-family: "gentona-semiBold";
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.text_white_16_W600 {
+  font-family: "gentona-semiBold";
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.text_white_14_W500 {
+  font-family: "gentona-medium";
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.text_white_14_W500_v2 {
+  font-family: "gentona-medium";
+  font-size: 0.875em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.text_white_24_W500 {
+  font-family: "gentona-medium";
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.text_white_20_W500 {
+  font-family: "gentona-medium";
+  font-size: 1.25em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.text_whiteSec_14_W400 {
+  font-family: "gentona-book";
+  font-size: 0.875em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #f5f5f5;
+}
+
+.text_labelPri_24_W500 {
+  font-family: "gentona-semiBold";
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  color: #f79420;
+}
+
+.text_labelPri_16_W500 {
+  font-family: "gentona-medium";
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #f79420;
+}
+
+.text_labelSec_14_W500 {
+  font-family: "gentona-medium";
+  font-size: 0.875em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #bf5b18;
+}
+
+.text_labelSec2_16_W500 {
+  font-family: "gentona-medium";
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: #fb5050;
+}
+
+.text_labelBlack_16_W600 {
+  font-family: "gentona-semiBold";
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0.04em;
+  color: #343434;
+}
+
+.text_link_14_W400 {
+  font-family: "gentona-book";
+  font-size: 0.875em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: #535353;
+}
+
+button {
+  font-family: "gentona-medium";
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.mr-25 {
+  margin-right: 25px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.padding_container {
+  padding: 0 50px;
+
+  @media (max-width: 768px) {
+    padding: 0 30px;
+  }
+  @media (max-width: 576px) {
+    padding: 0 10px;
+  }
+}

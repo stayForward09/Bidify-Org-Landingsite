@@ -1,0 +1,40 @@
+.infoCards {
+  text-align: center;
+  align-items: center;
+  
+}
+
+.exploreCards {
+  > img {
+    width: 100%;
+  }
+  &_flex {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.advisorCards {
+  display: flex;
+  gap: 20px;
+  padding: 25px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0px 25px 40px -25px #6C737D; 
+  @media (max-width: 1070px) {
+    flex-direction: column;
+  }
+}
+
+.sellers {
+  display: flex;
+  justify-content: space-between;
+  background: #f8f8f8;
+  padding: 25px;
+  box-shadow: 0px 25px 40px -25px #6C737D; 
+  > div:first-child {
+    display: flex;
+    gap: 10px;
+  }
+}
+

@@ -1,0 +1,18 @@
+@import "../../index.scss";
+
+input {
+  background: #ffffff;
+  color: #6c737d;
+  border: none;
+  outline: none;
+  padding: 13px 20px;
+  font-size: 0.75em;
+  font-family: "gentona-book";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  display: flex;
+  grid-gap: 8px;
+  min-width: 100%;
+}

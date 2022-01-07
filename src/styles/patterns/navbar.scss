@@ -1,0 +1,76 @@
+.navbar {
+  margin: 40px 50px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  @media (max-width: 768px) {
+    margin: 30px;
+  }
+  @media (max-width: 576px) {
+    margin: 20px 10px;
+    button {
+      display: none;
+    }
+  }
+  &_contents {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    &_links {
+      display: flex;
+      gap: 20px;
+      @media (max-width: 768px) {
+        display: none;
+      }
+      @media (max-width: 576px) {
+      }
+    }
+  }
+
+  .menuList {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  .sidebar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 0;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    grid-gap: 1em;
+    background: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: width 200ms ease-in-out, opacity 200ms linear;
+    z-index: 1;
+    display: none;
+
+    @media (max-width: 768px) {
+      display: flex;
+    }
+
+    &.active {
+      transform-origin: left;
+      visibility: visible;
+      opacity: 1;
+      width: 250px;
+      transition: width 200ms ease-in-out, opacity 300ms linear;
+    }
+
+    button {
+      display: none;
+      @media (max-width: 576px) {
+        display: flex;
+      }
+    }
+  }
+}

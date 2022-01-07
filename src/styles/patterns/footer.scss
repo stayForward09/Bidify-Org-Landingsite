@@ -1,0 +1,31 @@
+.footer {
+  margin: 5em 50px 40px;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    margin: 5em 30px 30px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  @media (max-width: 576px) {
+    margin: 4em 20px 10px;
+  }
+
+  &_links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+    > div {
+      > p,
+      li {
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .description {
+    width: 50%;
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.copyRight {
+  margin: 40px 50px;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 768px) {
+    margin: 30px;
+  }
+  @media (max-width: 576px) {
+    margin: 20px 10px;
+  }
+  >p{
+      margin: 0% auto;
+  }
+}
