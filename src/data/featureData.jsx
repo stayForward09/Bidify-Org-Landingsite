@@ -2,7 +2,7 @@ export const featureData = [
   {
     image: require("../assets/icons/fast&simple.svg").default,
     head: "Audited Trustworthy Code",
-    data: "Our Codebase has been audited by professional teams X and Y. You can view the reports in full here. ",
+    data: "Our codebase will be audited by a top audit firm, we will be conducting this when we have added all our features. ",
   },
   {
     image: require("../assets/icons/NFTs.svg").default,
